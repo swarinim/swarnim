@@ -1,0 +1,27 @@
+<div class="div1">
+    <h1><u>Todo Details:-</u></h1>
+
+    <div *ngIf="todo" class="div2" >
+    
+        <h2>{{todo.title}} Details:-</h2>
+        <div class="div3">
+            <span>ID: </span>
+            {{todo.id}}
+        </div>
+        <div class="div4">
+            <label class="lbl">Date:
+                <input [(ngModel)]="todo.date" placeholder="Date"/>
+            </label>
+
+            <label class="lbl">Title:
+                <input [(ngModel)]="todo.title" placeholder="Title"/>
+            </label>
+
+            <label class="lbl">Description:
+                <input [(ngModel)]="todo.description" placeholder="Description"/>
+            </label>
+
+        </div>
+    
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="div1">
+    <h1><u>Todo List:-</u></h1>
+    <div class="div2" *ngFor="let todo of todos" (click)="onselect(todo)">
+        <button class="btn" >{{todo.title}}</button>
+    </div>
+</div>
+<app-todo-details [todo]="selectedtodo"></app-todo-details>
